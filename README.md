@@ -9,16 +9,6 @@
 * ssh、scp
 
 # 项目目录介绍
-* scripts 项目脚本目录
-  * deployer 项目部署器
-    * Deployer.js 部署器部署脚本基类
-    * FTPDeployer.js ftp部署器脚本，继承自Deployer
-    * SCPDeployer.js scp部署器脚本，继承自Deployer
-  * build.js 项目构建脚本
-  * deploy.js 项目部署脚本
-  * dev.js 本地开发脚本
-  * getConfigs.js 获取用户配置
-  * logger.js 脚本执行日志工具
 * src 源码目录 目录中的内容实际上就是使用gitbook init生成的内容
 * gitbook.config.js 项目构建部署配置文件，填写了一些默认项，其它的需要开发者自行补充
 * gulpfile.js gulp配置文件
@@ -45,23 +35,17 @@ module.exports = {
 # 运行脚本
 ```shell
 # 开发预览
-yarn run dev
-or
-npm run dev
+kiwi-gitbook dev
 ```
 
 ```shell
 # 项目构建
-yarn run build
-or
-npm run build
+kiwi-gitbook build
 ```
 
 ```shell
 # 项目发布
-yarn run deploy
-or
-npm run deploy
+kiwi-gitbook deploy
 ```
 
 # 相关参考
