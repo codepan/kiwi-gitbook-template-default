@@ -5,6 +5,9 @@
   "author": "{{author}}",
   "license": "MIT",
   "scripts": {
+    "dev": "kiwi-gitbook dev",
+    "build": "kiwi-gitbook build",
+    "deploy": "kiwi-gitbook deploy"
   },
   "dependencies": {
     "gitbook-cli": "^2.3.2",
