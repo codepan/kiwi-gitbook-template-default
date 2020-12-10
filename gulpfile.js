@@ -3,7 +3,9 @@ const htmlmin = require('gulp-htmlmin')
 const uglify = require('gulp-uglify')
 const cleanCss = require('gulp-clean-css')
 const imagemin = require('gulp-imagemin')
-const { output } = require('./scripts/getConfigs')()
+const config = require('./gitbook.config')
+
+const output = config?.output || 'dist'
 
 // 压缩html文件
 gulp.task('minifyHtml', () => {
