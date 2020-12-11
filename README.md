@@ -29,23 +29,28 @@ module.exports = {
       user: 'xxx', // 用户名
       password: 'xxx' // 密码
     }
+  },
+  devServer: { // 开发服务器相关配置
+    port: 4000, // 端口号，默认为4000
+    open: false, // 是否自动打开浏览器，默认false
+    watch: true, // 是否监听文件的变化，自动刷新，默认true
   }
 }
 ```
 # 运行脚本
 ```shell
 # 开发预览
-kiwi-gitbook dev
+npm run dev
 ```
 
 ```shell
 # 项目构建
-kiwi-gitbook build
+npm run build
 ```
 
 ```shell
 # 项目发布
-kiwi-gitbook deploy
+npm run deploy
 ```
 
 # 相关参考
